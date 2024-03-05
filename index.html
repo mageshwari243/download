@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download Redirection</title>
+    <script>
+        // Function to redirect to a specific URL
+        function redirectToURL() {
+            window.location.href = "https://example.com/redirected_page.html"; // Change this URL to your desired redirection URL
+        }
+
+        // Function to handle file download
+        function handleFileDownload() {
+            // Call the redirection function after a certain delay (e.g., 5 seconds)
+            setTimeout(redirectToURL, 5000); // Adjust the delay time as per your requirement (in milliseconds)
+        }
+    </script>
+</head>
+<body>
+    <h1>Click the link below to download the file</h1>
+    <a href="https://example.com/your_file_to_download.zip" onclick="handleFileDownload()">Download File</a> <!-- Replace the href attribute with your file URL -->
+</body>
+</html>
